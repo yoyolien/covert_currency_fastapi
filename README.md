@@ -19,7 +19,7 @@
 
 ```bash
 curl -X 'GET' \
-  'http://localhost:8000/convert/?source=USD&target=JPY&amount=$1,525' \
+  'http://localhost:8000/?source=USD&target=JPY&amount=$1,525' \
   -H 'accept: application/json'
 ```
 
