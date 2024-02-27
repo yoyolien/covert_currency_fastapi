@@ -7,9 +7,9 @@
 ## 功能
 
 - **GET 端點:** `/`
-  - 接受源貨幣 (`source`)、目標貨幣 (`target`) 和金額 (`amount`) 參數。
-  - 將給定的金額從源貨幣轉換為目標貨幣。
-  - 以指定的格式返回轉換後的金額。
+    - 接受源貨幣 (`source`)、目標貨幣 (`target`) 和金額 (`amount`) 參數。
+    - 將給定的金額從源貨幣轉換為目標貨幣。
+    - 以指定的格式返回轉換後的金額。
 
 ## 使用方式
 
@@ -31,20 +31,23 @@ curl -X 'GET' \
   "amount": "$170,496.53"
 }
 ```
+
 ### 安裝與執行
 
-1.clone
+1. clone
 
 ```bash
   git clone https://github.com/yoyolien/covert_currency_fastapi
 ```
 
-2.安裝相關套件
+2. 安裝相關套件
+
 ```bash
   pip install -r requirement.txt
 ```
 
-3.執行
+3. 執行
+
 ```bash
   uvicorn main:app --reload
 ```
