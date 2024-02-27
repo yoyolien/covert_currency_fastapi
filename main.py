@@ -32,5 +32,8 @@ async def convert(source: str, target: str, amount: str):
         return {"message": "success",
                 "amount": f"${amount}"
                 }
+
+    except KeyError as e:
+        return {"message": f"貨幣代號有誤:{str(e)}"}
     except Exception as e:
         return {"message": str(e)}
